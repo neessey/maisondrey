@@ -1,0 +1,6 @@
+{
+  "name": "La Maison Drey",
+  "description": "Maison de réception et gastronomie événementielle d'exception.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
