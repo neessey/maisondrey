@@ -58,7 +58,7 @@ export default function ProcessSection() {
                       initial={{ opacity: 0, x: isEven ? 30 : -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true, margin: '-50px' }}
-                      transition={{ duration: 1.2, cubicBezier: [0.16, 1, 0.3, 1] }}
+                      transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                       className="bg-[#FFFDF9] border border-[#E8C89A]/20 p-6 md:p-8 shadow-sm hover:border-[#D8B26A]/50 transition-all duration-300 relative group"
                     >
                       {/* Hover subtle gold scale accent */}
