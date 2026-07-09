@@ -71,6 +71,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/burger.jpg',
     price: 6000,
+    unit: '10 pièces',
     description: 'Brioche dorée maison au sésame, bœuf Black Angus, cheddar affiné, compotée d\'oignons caramélisés et notre sauce secrète à la truffe noire.',
     highlight: 'L\'incontournable street food réinventé sous un angle d\'une rare élégance culinaire.'
   },
@@ -81,6 +82,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/mini-pizza.jpg',
     price: 3500,
+    unit: '10 pièces',
     description: 'Mini pizzas généreusement garnies et cuites sur une pâte légère et croustillante.',
     highlight: 'Un classique revisité pour ravir tous les invités.'
   },
@@ -91,6 +93,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/quiches.jpg',
     price: 5000,
+    unit: '10 pièces',
     description: 'Pâte brisée croustillante et garniture fondante aux herbes fines.',
     highlight: 'Une bouchée gourmande au goût authentique.'
   },
@@ -101,6 +104,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/hot-dog.jpg',
     price: 6000,
+    unit: '10 pièces',
     description: 'Pain brioché, saucisse artisanale et garniture savoureuse.',
     highlight: 'La gourmandise dans un format miniature.'
   },
@@ -111,6 +115,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/pastels.jpg',
     price: 2000,
+    unit: '10 pièces',
     description: 'Pastels croustillants garnis selon votre choix.',
     highlight: 'Un incontournable des réceptions.'
   },
@@ -121,6 +126,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/ailerons-poulet.jpg',
     price: 4000,
+    unit: '10 pièces',
     description: 'Ailerons marinés puis rôtis jusqu\'à obtenir une peau croustillante.',
     highlight: 'Parfaits pour les amateurs de saveurs généreuses.'
   },
@@ -131,6 +137,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/wrap-poulet.jpg',
     price: 8500,
+    unit: '10 pièces',
     description: 'Wraps garnis de poulet pané croustillant et de légumes frais.',
     highlight: 'Une alliance parfaite entre fraîcheur et gourmandise.'
   },
@@ -141,6 +148,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/wrap-jambon.png',
     price: 5000,
+    unit: '10 pièces',
     description: 'Délicats roulés au jambon et fromage frais.',
     highlight: 'Élégants et faciles à déguster.'
   },
@@ -151,6 +159,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/feuillete-saucisse.jpg',
     price: 5000,
+    unit: '10 pièces',
     description: 'Pâte feuilletée pur beurre garnie de saucisses.',
     highlight: 'Le plaisir du croustillant à chaque bouchée.'
   },
@@ -161,6 +170,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/mini-tacos-viande.jpg',
     price: 7500,
+    unit: '10 pièces',
     description: 'Mini tacos garnis de viande tendre et de sauce maison.',
     highlight: 'Un format idéal pour les événements.'
   },
@@ -171,6 +181,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/mini-tacos-poulet.jpg',
     price: 10000,
+    unit: '10 pièces',
     description: 'Mini tacos au poulet savoureux et généreusement garnis.',
     highlight: 'Une création gourmande qui fait l\'unanimité.'
   },
@@ -181,6 +192,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/nems.jpg',
     price: 4000,
+    unit: '10 pièces',
     description: 'Nems dorés et croustillants accompagnés de leur sauce.',
     highlight: 'Une touche asiatique pour vos buffets.'
   },
@@ -191,6 +203,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/brochette-poulet.jpg',
     price: 6000,
+    unit: '10 pièces',
     description: 'Brochettes de poulet marinées et grillées.',
     highlight: 'Une valeur sûre pour toutes les occasions.'
   },
@@ -201,6 +214,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/brochette-viande.jpg',
     price: 6000,
+    unit: '10 pièces',
     description: 'Brochettes de viande tendres et parfumées.',
     highlight: 'Une cuisson maîtrisée pour une saveur incomparable.'
   },
@@ -211,6 +225,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/tacos-mexicain-viande.jpg',
     price: 5000,
+    unit: '10 pièces',
     description: 'Tacos garnis de viande assaisonnée aux épices mexicaines.',
     highlight: 'Une explosion de saveurs.'
   },
@@ -221,6 +236,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/tacos-mexicain-poulet.jpg',
     price: 6000,
+    unit: '10 pièces',
     description: 'Tacos garnis de poulet mariné aux épices.',
     highlight: 'Une spécialité qui séduit à chaque dégustation.'
   },
@@ -231,6 +247,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Salé',
     image: '/assets/navette-thon.png',
     price: 5000,
+    unit: '10 pièces',
     description: 'Petits pains moelleux garnis d\'une préparation onctueuse au thon.',
     highlight: 'Idéal pour les cocktails et buffets.'
   },
@@ -241,6 +258,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/cake-nature-mini.jpg',
     price: 2500,
+    unit: '10 pièces',
     description: 'Mini cakes moelleux préparés selon une recette artisanale.',
     highlight: 'Une douceur simple et authentique.'
   },
@@ -251,6 +269,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/cake-marbré-mini.jpg',
     price: 3000,
+    unit: '10 pièces',
     description: 'Mini cakes marbrés au chocolat et à la vanille.',
     highlight: 'L\'équilibre parfait entre douceur et gourmandise.'
   },
@@ -261,6 +280,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/cake-nature.jpg',
     price: 2500,
+    unit: '10 pièces',
     description: 'Cake nature généreux et moelleux.',
     highlight: 'Parfait pour accompagner vos boissons chaudes.'
   },
@@ -271,6 +291,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/cake-marbré.jpg',
     price: 3000,
+    unit: '10 pièces',
     description: 'Cake marbré au chocolat et à la vanille.',
     highlight: 'Une recette intemporelle appréciée de tous.'
   },
@@ -281,6 +302,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/crepe-nutella.jpeg',
     price: 4000,
+    unit: '10 pièces',
     description: 'Crêpes fines garnies de Nutella.',
     highlight: 'Le plaisir des petits comme des grands.'
   },
@@ -291,6 +313,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/crepes-nature.jpg',
     price: 2000,
+    unit: '10 pièces',
     description: 'Crêpes maison légères et moelleuses.',
     highlight: 'À savourer selon vos envies.'
   },
@@ -301,6 +324,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/sushi-crepe.jpeg',
     price: 10000,
+    unit: '10 pièces',
     description: 'Crêpes roulées et découpées façon sushi avec différentes garnitures.',
     highlight: 'Une présentation élégante et surprenante.'
   },
@@ -311,6 +335,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/brownies.jpg',
     price: 5000,
+    unit: '12 pièces',
     description: 'Brownies intensément chocolatés, moelleux à cœur.',
     highlight: 'Un incontournable pour les amateurs de chocolat.'
   },
@@ -321,6 +346,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-oreo-mini.png',
     price: 5000,
+    unit: '10 pièces',
     description: 'Crème onctueuse et biscuits Oreo émiettés.',
     highlight: 'Une douceur irrésistible.'
   },
@@ -331,6 +357,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-nutella-mini.jpg',
     price: 5000,
+    unit: '10 pièces',
     description: 'Crème légère au Nutella.',
     highlight: 'Une gourmandise chocolatée.'
   },
@@ -341,6 +368,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-speculos-mini.png',
     price: 6000,
+    unit: '10 pièces',
     description: 'Crème légère et biscuits spéculos.',
     highlight: 'Une saveur délicatement épicée.'
   },
@@ -351,6 +379,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-tropicale-mini.jpg',
     price: 5000,
+    unit: '10 pièces',
     description: 'Mélange de fruits frais de saison et crème légère.',
     highlight: 'Une note fruitée et rafraîchissante.'
   },
@@ -361,6 +390,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-oreo.png',
     price: 10000,
+    unit: '10 pièces',
     description: 'Version généreuse de notre verrine Oreo.',
     highlight: 'Encore plus de gourmandise.'
   },
@@ -371,6 +401,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-nutella.jpg',
     price: 10000,
+    unit: '10 pièces',
     description: 'Une grande verrine riche en saveurs chocolatées.',
     highlight: 'Pour les amateurs de Nutella.'
   },
@@ -381,6 +412,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-speculos.png',
     price: 12000,
+    unit: '10 pièces',
     description: 'Grande verrine aux biscuits spéculos.',
     highlight: 'Une finition élégante pour vos réceptions.'
   },
@@ -391,6 +423,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Sucré',
     image: '/assets/verrine-tropicale.jpg',
     price: 5000,
+    unit: '10 pièces',
     description: 'Grande verrine garnie de fruits frais de saison.',
     highlight: 'Fraîcheur et légèreté.'
   },
@@ -401,6 +434,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Boisson',
   image: '/assets/bora-bora.jpg',
   price: 2000,
+  unit: 'L\'unité',
   description: 'Un cocktail sans alcool aux saveurs fruitées et rafraîchissantes.',
   highlight: 'Une explosion de fraîcheur tropicale.'
 },
@@ -411,6 +445,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Boisson',
   image: '/assets/mojito.jpg',
   price: 2000,
+  unit: 'L\'unité',
   description: 'Une version sans alcool du célèbre mojito, fraîche et légère.',
   highlight: 'Le goût du mojito sans alcool.'
 },
@@ -421,6 +456,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Boisson',
   image: '/assets/pina-colada.png',
   price: 2000,
+  unit: 'L\'unité',
   description: 'Un mélange onctueux de fruits tropicaux sans alcool.',
   highlight: 'Une douceur exotique et crémeuse.'
 },
@@ -431,6 +467,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Boisson',
   image: '/assets/cocktail-by-dreyy.png',
   price: 2000,
+  unit: 'L\'unité',
   description: 'Une création originale sans alcool imaginée par Dreyy.',
   highlight: 'Une signature unique et raffinée.'
 },
@@ -442,6 +479,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Alcoolisé',
   image: '/assets/bora-bora.jpg',
   price: 3000,
+  unit: 'L\'unité',
   description: 'Un cocktail tropical avec alcool aux notes fruitées.',
   highlight: 'Un équilibre parfait entre douceur et caractère.'
 },
@@ -452,6 +490,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Alcoolisé',
   image: '/assets/mojito.jpg',
   price: 3000,
+  unit: 'L\'unité',
   description: 'Un mojito classique préparé avec des ingrédients frais.',
   highlight: 'Fraîcheur, menthe et élégance.'
 },
@@ -462,6 +501,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Alcoolisé',
   image: '/assets/pina-colada.png',
   price: 3000,
+  unit: 'L\'unité',
   description: 'Un cocktail tropical onctueux avec alcool.',
   highlight: 'Une invitation au voyage.'
 },
@@ -472,6 +512,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Alcoolisé',
   image: '/assets/cocktail-by-dreyy.png',
   price: 3000,
+  unit: 'L\'unité',
   description: 'Une création exclusive avec alcool signée Dreyy.',
   highlight: 'L’originalité d’une recette unique.'
 },
@@ -482,6 +523,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Boisson',
     image: '/assets/bissap.jpg',
     price: 500,
+    unit: 'L\'unité',
     description: 'Bissap floral et légèrement acidulé, préparé avec soin pour un goût authentique.',
     highlight: 'Une explosion de saveurs rouges et rafraîchissantes.'
   },
@@ -492,6 +534,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Boisson',
     image: '/assets/tomy.jpg',
     price: 500,
+    unit: 'L\'unité',
     description: 'Un jus tropical et sucré qui rappelle les saveurs exotiques des îles.',
     highlight: 'Un voyage ensoleillé dans chaque gorgée.'
   },
@@ -502,6 +545,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Boisson',
     image: '/assets/gingembre.jpg',
     price: 500,
+    unit: 'L\'unité',
     description: 'Gingembre frais mélangé à des fruits pour un équilibre piquant et tonique.',
     highlight: 'Un coup de fouet épicé pour réveiller les sens.'
   },
@@ -512,6 +556,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Boisson',
     image: '/assets/citron.png',
     price: 500,
+    unit: 'L\'unité',
     description: 'Citron pressé à la perfection, doux et acidulé pour une grande fraîcheur.',
     highlight: 'Une sensation pétillante et acidulée.'
   },
@@ -522,6 +567,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Brunch',
     image: '/assets/petit-dejeuner.jpg',
     price: 3500,
+    unit: 'L\'unité',
     description: 'Assortiment de viennoiseries, boissons chaudes et gourmandises.',
     highlight: 'Commencez la journée avec élégance.'
   },
@@ -532,6 +578,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     category: 'Forfait',
     image: '/assets/boxes.jpeg',
     price: 3500,
+    unit: 'L\'unité',
     description: 'Sélection de créations salées et sucrées présentées dans un coffret raffiné.',
     highlight: 'Le meilleur de La Maison Dreyy dans un seul coffret.'
   },
@@ -542,6 +589,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Forfait',
   image: '/assets/forfait-essentiel.jpg',
   price: 300000,
+  unit: 'L\'unité',
   description:
     'Un buffet complet pour 30 personnes comprenant 6 pièces apéritives salées au choix, 2 cocktails (alcoolisés ou non), 1 plat principal au choix, 2 accompagnements, le dressage complet du buffet ainsi que le matériel de présentation.',
   highlight:
@@ -554,6 +602,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Forfait',
   image: '/assets/forfait-prestige.jpg',
   price: 475000,
+  unit: 'L\'unité',
   description:
     'Un buffet raffiné pour 50 personnes comprenant 7 pièces apéritives salées au choix, 2 cocktails (alcoolisés ou non), 1 plat principal au choix, 2 accompagnements, le dressage complet du buffet ainsi que le matériel de présentation.',
   highlight:
@@ -566,6 +615,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   category: 'Forfait',
   image: '/assets/forfait-signature.jpg',
   price: 900000,
+  unit: 'L\'unité',
   description:
     'Notre formule la plus complète pour 100 personnes comprenant 8 pièces apéritives salées au choix, 3 cocktails (alcoolisés ou non), 1 plat principal au choix, 2 accompagnements, le dressage complet du buffet ainsi que le matériel de présentation.',
   highlight:

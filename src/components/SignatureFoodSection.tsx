@@ -220,7 +220,12 @@ export default function SignatureFoodSection({ selectedItems, onToggleItem }: Si
                   <span className="font-serif text-2xl sm:text-3xl text-[#4A4A37]">
                     {focusedFood.price.toLocaleString()} FCFA
                   </span>
-                </div>
+                {focusedFood.unit && (
+    <span className="text-xs uppercase tracking-[0.2em] text-[#B7B68A]">
+      Prix pour {focusedFood.unit}
+    </span>
+  )}
+</div>
 
                 <div>
                   <p className="font-sans text-[10px] uppercase tracking-[0.25em] font-semibold text-[#4A4A37] mb-3">

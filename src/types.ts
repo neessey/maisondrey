@@ -16,6 +16,7 @@ export interface SignatureFood {
   category: string;
   image: string;
   price: number;
+  unit: string;
   description: string;
   highlight: string;
 }
