@@ -154,112 +154,116 @@ export default function SignatureFoodSection({ selectedItems, onToggleItem }: Si
 
       {/* Signature Food Details Overlay Modal */}
       <AnimatePresence>
-        {focusedFood && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-[#FFFDF9] border border-[#E8C89A] max-w-2xl w-full relative overflow-hidden shadow-2xl"
-            >
-              {/* Close Button */}
-              <button
-                onClick={() => setFocusedFood(null)}
-                className="absolute top-4 right-4 z-10 p-2 bg-[#FFFDF9]/95 border border-[#E8C89A]/20 text-[#4A4A37] hover:text-[#D8B26A] transition-colors cursor-pointer"
-                aria-label="Fermer"
-              >
-                <X size={16} />
-              </button>
+  {focusedFood && (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-md">
+      <div className="flex min-h-full items-center justify-center p-3 sm:p-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.95, y: 30 }}
+          transition={{ duration: 0.35 }}
+          className="relative w-full max-w-5xl overflow-hidden rounded-xl border border-[#E8C89A]/30 bg-[#FFFDF9] shadow-2xl max-h-[95vh] overflow-y-auto"
+        >
+          {/* Close */}
+          <button
+            onClick={() => setFocusedFood(null)}
+            className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-md transition hover:bg-white"
+          >
+            <X size={18} />
+          </button>
 
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                {/* Image panel */}
-                <div className="relative h-64 md:h-auto min-h-[300px] bg-[#4A4A37]">
-                  <img
-                    src={focusedFood.image}
-                    alt={focusedFood.title}
-                    referrerPolicy="no-referrer"
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                  <span className="absolute bottom-4 left-4 font-sans text-[9px] uppercase tracking-[0.25em] bg-[#FFFDF9] text-[#4A4A37] py-1 px-2 font-bold">
-                    {focusedFood.category}
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            {/* Image */}
+            <div className="relative h-64 sm:h-80 lg:h-auto lg:min-h-[650px]">
+              <img
+                src={focusedFood.image}
+                alt={focusedFood.title}
+                className="h-full w-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+              <span className="absolute bottom-5 left-5 bg-white px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#4A4A37]">
+                {focusedFood.category}
+              </span>
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-col justify-between p-5 sm:p-8">
+              <div>
+                <div className="flex items-center gap-2">
+                  <Sparkles className="h-4 w-4 text-[#D8B26A]" />
+
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-[#B7B68A] font-semibold">
+                    Création d'Art
                   </span>
                 </div>
 
-                {/* Content Panel */}
-               {/* Content Panel */}
-<div className="p-5 sm:p-6 md:p-8 flex flex-col justify-between">
-  <div className="space-y-4">
-    <div className="flex items-center gap-2">
-      <Sparkles className="text-[#D8B26A] w-4 h-4" />
-      <span className="font-sans text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-[#B7B68A] font-semibold">
-        Création d'Art
-      </span>
-    </div>
+                <h2 className="mt-5 font-serif text-3xl sm:text-4xl text-[#4A4A37] leading-tight">
+                  {focusedFood.title}
+                </h2>
 
-    <h3 className="font-serif text-2xl sm:text-3xl text-[#4A4A37] leading-tight">
-      {focusedFood.title}
-    </h3>
+                <p className="mt-2 font-serif italic text-[#D8B26A] text-base">
+                  {focusedFood.frenchTitle}
+                </p>
 
-    <p className="font-serif italic text-sm text-[#D8B26A]">
-      {focusedFood.frenchTitle}
-    </p>
+                <p className="mt-6 text-sm sm:text-base leading-8 text-[#4A4A37]/75">
+                  {focusedFood.description}
+                </p>
 
-    <p className="font-sans text-sm text-[#4A4A37]/80 leading-relaxed">
-      {focusedFood.description}
-    </p>
+                <div className="my-8 border-y border-[#E8C89A]/30 py-5 flex items-center justify-between">
+                  <span className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#B7B68A]">
+                    Prix
+                  </span>
 
-    <div className="flex items-center justify-between border-y border-[#E8C89A]/30 py-4">
-      <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#B7B68A]">
-        Prix
-      </span>
+                  <span className="font-serif text-2xl sm:text-3xl text-[#4A4A37]">
+                    {focusedFood.price.toLocaleString()} FCFA
+                  </span>
+                </div>
 
-      <span className="font-serif text-xl sm:text-2xl text-[#4A4A37]">
-        {focusedFood.price} FCFA
-      </span>
-    </div>
+                <div>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.25em] font-semibold text-[#4A4A37] mb-3">
+                    La note du Chef
+                  </p>
 
-    <div>
-      <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#4A4A37] font-semibold mb-2">
-        La note du Chef
-      </p>
-
-      <p className="font-serif italic text-sm text-[#B7B68A]">
-        {focusedFood.highlight}
-      </p>
-    </div>
-  </div>
-
-  <div className="mt-8 flex flex-col sm:flex-row gap-3">
-    <button
-      onClick={() => {
-        onToggleItem(focusedFood);
-        setFocusedFood(null);
-      }}
-      className={`flex-1 py-3 font-sans text-[10px] uppercase tracking-[0.2em] font-semibold border transition-all ${
-        isItemSelected(focusedFood.id)
-          ? 'bg-transparent border-[#E8C89A] text-[#B7B68A]'
-          : 'bg-[#4A4A37] border-[#4A4A37] text-white hover:bg-[#D8B26A] hover:border-[#D8B26A]'
-      }`}
-    >
-      {isItemSelected(focusedFood.id)
-        ? 'Retirer du Buffet'
-        : 'Ajouter au Buffet'}
-    </button>
-
-    <button
-      onClick={() => setFocusedFood(null)}
-      className="py-3 px-5 border border-[#E8C89A]/30 bg-[#FBF8F3] hover:bg-[#E8C89A]/10 font-sans text-[10px] uppercase tracking-[0.2em] text-[#4A4A37]"
-    >
-      Fermer
-    </button>
-  </div>
-</div>
+                  <p className="font-serif italic text-[#B7B68A] leading-7">
+                    {focusedFood.highlight}
+                  </p>
+                </div>
               </div>
-            </motion.div>
+
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+                <button
+                  onClick={() => {
+                    onToggleItem(focusedFood);
+                    setFocusedFood(null);
+                  }}
+                  className={`w-full sm:flex-1 py-4 text-[11px] uppercase tracking-[0.25em] font-semibold transition ${
+                    isItemSelected(focusedFood.id)
+                      ? 'border border-[#D8B26A] bg-transparent text-[#B7B68A]'
+                      : 'bg-[#4A4A37] text-white hover:bg-[#D8B26A]'
+                  }`}
+                >
+                  {isItemSelected(focusedFood.id)
+                    ? 'Retirer du Buffet'
+                    : 'Ajouter au Buffet'}
+                </button>
+
+                <button
+                  onClick={() => setFocusedFood(null)}
+                  className="w-full sm:w-auto border border-[#E8C89A]/40 bg-[#FBF8F3] px-8 py-4 text-[11px] uppercase tracking-[0.25em] text-[#4A4A37] transition hover:bg-[#E8C89A]/10"
+                >
+                  Fermer
+                </button>
+              </div>
+            </div>
           </div>
-        )}
-      </AnimatePresence>
+        </motion.div>
+      </div>
+    </div>
+  )}
+</AnimatePresence>
     </section>
   );
 }
