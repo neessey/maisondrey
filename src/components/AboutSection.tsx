@@ -61,7 +61,7 @@ export default function AboutSection() {
               <div className="h-[1px] bg-[#E8C89A]/40 w-24 my-6"></div>
 
               <p className="font-sans text-sm md:text-base text-[#4A4A37]/80 leading-relaxed space-y-4">
-                La Maison Drey ne propose pas de simples buffets. Nous concevons de véritables scénographies culinaires sur-mesure. Notre approche mêle la rigueur de la gastronomie à l'élégance contemporaine des plus belles réceptions internationales. 
+                La Maison dreyy ne propose pas de simples buffets. Nous concevons de véritables scénographies culinaires sur-mesure. Notre approche mêle la rigueur de la gastronomie à l'élégance contemporaine des plus belles réceptions internationales. 
                 <br /><br />
                 Que ce soit pour un mariage intimiste dans un château séculaire, un lancement de produit pour une maison de haute couture ou un brunch dominical, nos maîtres de cérémonie et créateurs culinaires subliment vos instants les plus précieux avec un professionnalisme d'orfèvre.
               </p>
@@ -72,7 +72,7 @@ export default function AboutSection() {
                     « Notre ambition n'est pas simplement de nourrir vos convives, mais de suspendre le temps pour leur offrir un voyage sensoriel inoubliable. »
                   </p>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-[#4A4A37] font-semibold text-right mt-2">
-                    — La Chef du restaurant, La Maison Drey
+                    — La Chef du restaurant, La Maison dreyy
                   </p>
                 </div>
               </div>

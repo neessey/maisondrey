@@ -56,7 +56,7 @@ export default function App() {
     <div className="min-h-screen bg-[#FFFDF9] text-[#4A4A37] flex flex-col relative">
       {/* Sticky Premium Navigation Header */}
       <Header
-        onBookClick={() => scrollToSection('contact')}
+        onBookClick={() => scrollToSection('signature')}
         onExploreClick={() => scrollToSection('concept')}
       />
 
@@ -64,7 +64,7 @@ export default function App() {
       <main className="flex-1">
         {/* Hero Section */}
         <Hero
-          onDiscoverClick={() => scrollToSection('concept')}
+          onDiscoverClick={() => scrollToSection('signature')}
           onBookClick={() => scrollToSection('contact')}
         />
 

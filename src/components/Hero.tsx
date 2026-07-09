@@ -56,14 +56,14 @@ export default function Hero({ onDiscoverClick, onBookClick }: HeroProps) {
           <span className="h-[1px] w-4 sm:w-8 bg-[#E8C89A] shrink-0"></span>
         </motion.div>
 
-        {/* Text énorme: La Maison Drey */}
+        {/* Text énorme: La Maison dreyy */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
           className="font-serif text-[4rem] xs:text-[5rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] tracking-wider sm:tracking-widest text-ivory uppercase select-none leading-none drop-shadow-sm font-light"
         >
-          La Maison Drey
+          La Maison dreyy
         </motion.h1>
 
         {/* Subtitle: L'élégance au cœur de vos événements */}
@@ -100,14 +100,14 @@ export default function Hero({ onDiscoverClick, onBookClick }: HeroProps) {
             onClick={onDiscoverClick}
             className="flex-1 bg-ivory text-olive-dark border border-champagne font-sans text-[11px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] py-3 md:py-4 px-6 md:px-8 font-semibold transition-all duration-500 rounded-none cursor-pointer"
           >
-            Découvrir
+            Commander
           </button>
           <button
             type="button"
             onClick={onBookClick}
             className="flex-1 bg-champagne hover:bg-[#D8B26A] text-olive-dark border border-champagne hover:border-[#D8B26A] font-sans text-[11px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] py-3 md:py-4 px-6 md:px-8 font-semibold transition-all duration-500 rounded-none shadow-lg shadow-black/10 cursor-pointer"
           >
-            Réserver
+            Nous contacter
           </button>
         </motion.div>
       </div>

@@ -47,17 +47,17 @@ const totalPrice = Math.round(totalPiecesNeeded * averagePricePerPiece);
 
   const constructMessageText = () => {
     const list = selectedItems.map(item => `- ${item.title} (${item.frenchTitle})`).join('%0A');
-    return `Bonjour La Maison Drey,%0A%0AJe souhaite concevoir un événement d'exception :%0A- Nom : ${name}%0A- Email : ${email}%0A- Type : ${prestation}%0A- Invités : ${guests} convives%0A- Date souhaitée : ${date || 'À déterminer'}%0A- Lieu de Réception : ${receptionLocation || 'À déterminer'}%0A- %0A Pièces estimées : ${totalPiecesNeeded} pièces%0A%0AMes créations sélectionnées :%0A${list}%0A%0AMerci de me recontacter pour affiner mon projet d'orfèvrerie culinaire.`;
+    return `Bonjour La Maison dreyy,%0A%0AJe souhaite concevoir un événement d'exception :%0A- Nom : ${name}%0A- Email : ${email}%0A- Type : ${prestation}%0A- Invités : ${guests} convives%0A- Date souhaitée : ${date || 'À déterminer'}%0A- Lieu de Réception : ${receptionLocation || 'À déterminer'}%0A- %0A Pièces estimées : ${totalPiecesNeeded} pièces%0A%0AMes créations sélectionnées :%0A${list}%0A%0AMerci de me recontacter pour affiner mon projet d'orfèvrerie culinaire.`;
   };
 
   const handleSendWhatsApp = () => {
     const text = constructMessageText();
-    window.open(`https://wa.me/2250504272827?text=${text}`, '_blank');
+    window.open(`https://wa.me/2250702925688?text=${text}`, '_blank');
   };
 
   const handleSendEmail = () => {
     const text = constructMessageText();
-    window.open(`mailto:contact@maisondrey.com?subject=Demande%20de%20Reception%20D'Exception%20-%20La%20Maison%20Drey&body=${text}`, '_blank');
+    window.open(`mailto:contact@maisondreyy.com?subject=Demande%20de%20Reception%20D'Exception%20-%20La%20Maison%20dreyy&body=${text}`, '_blank');
   };
 
   return (
@@ -279,7 +279,7 @@ const totalPrice = Math.round(totalPiecesNeeded * averagePricePerPiece);
 
                     <div className="text-center pb-6 border-b border-[#E8C89A]/30">
                       <span className="font-serif text-2xl tracking-[0.2em] uppercase text-[#4A4A37] block">
-                        La Maison Drey
+                        La Maison dreyy
                       </span>
                       <span className="font-sans text-[8px] uppercase tracking-[0.3em] text-[#B7B68A] mt-1 block">
                         Écrin de Réception d'Exception
@@ -342,21 +342,6 @@ const totalPrice = Math.round(totalPiecesNeeded * averagePricePerPiece);
                           {totalPiecesNeeded.toLocaleString('fr-FR')} <span className="text-sm font-medium">pièces</span>
                         </span>
                       </div>
-
-                      <div className="flex justify-between items-center bg-[#4A4A37] p-5 mt-4">
-  <div>
-    <span className="font-sans text-[9px] uppercase tracking-widest text-[#E8C89A] block">
-      Estimation finale
-    </span>
-    <span className="font-serif italic text-xs text-white/70">
-      Buffet personnalisé
-    </span>
-  </div>
-
-  <span className="font-serif text-2xl font-bold text-[#E8C89A]">
-    {totalPrice.toLocaleString('fr-FR')} FCFA
-  </span>
-</div>
                     </div>
 
                     {/* Bridges buttons */}

@@ -70,69 +70,29 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Mini Burgers Gastronomiques',
     category: 'Salé',
     image: '/assets/burger.jpg',
-    price: 300,
+    price: 6000,
     description: 'Brioche dorée maison au sésame, bœuf Black Angus, cheddar affiné, compotée d\'oignons caramélisés et notre sauce secrète à la truffe noire.',
     highlight: 'L\'incontournable street food réinventé sous un angle d\'une rare élégance culinaire.'
   },
   {
-    id: 'crepes',
-    title: 'Crêpes gourmandes',
-    frenchTitle: 'Les Crêpes de la Maison',
-    category: 'Sucré',
-    image: '/assets/crepes.jpeg',
-    price: 250,
-    description: 'Crêpes d\'une finesse extrême aromatisées à la fleur d\'oranger, accompagnées de caramel au beurre salé maison et éclats de noisettes du Piémont.',
-    highlight: 'Le secret de notre histoire, sublimé par des ingrédients de prestige.'
-  },
-  {
-    id: 'mocktails',
-    title: 'Mocktails',
-    frenchTitle: 'Élixirs de Fleurs & Fruits',
-    category: 'Boisson',
-    image: '/assets/mocktails.jpg',
-    price: 200,
-    description: 'Infusion de rose et de baies sauvages, eau de concombre bio, nectar de litchi et feuille d\'or 24 carats scintillante.',
-    highlight: 'Une expérience de mixologie sans alcool, aussi spectaculaire que raffinée.'
-  },
-  {
-    id: 'jus',
-    title: 'Jus frais',
-    frenchTitle: 'Nectars Pressés à Froid',
-    category: 'Boisson',
-    image: '/assets/jus.jpg',
-    price: 150,
-    description: 'Combinaisons botaniques pures : pomme verte, céleri, gingembre bio et touche de citron vert pressé à froid pour préserver chaque nutriment.',
-    highlight: 'Une explosion de vitalité naturelle présentée dans des flacons en verre élégants.'
-  },
-  {
-    id: 'breakfast',
-    title: 'Petit déjeuner',
-    frenchTitle: 'Le Réveil Parisien',
-    category: 'Brunch',
-    image: '/assets/petit-dejeuner.jpg',
+    id: 'pizza',
+    title: 'Mini Pizza',
+    frenchTitle: 'Pizzettas Artisanales',
+    category: 'Salé',
+    image: '/assets/mini-pizza.jpg',
     price: 3500,
-    description: 'Assortiment de viennoiseries miniatures croustillantes, beurre de baratte demi-sel et confitures artisanales cuites au chaudron.',
-    highlight: 'La tradition des plus grands palaces français livrée directement chez vous.'
+    description: 'Mini pizzas généreusement garnies et cuites sur une pâte légère et croustillante.',
+    highlight: 'Un classique revisité pour ravir tous les invités.'
   },
   {
     id: 'quiches',
     title: 'Quiches',
-    frenchTitle: 'Quichettes aux Herbes Fines',
+    frenchTitle: 'Quichettes aux Herbes',
     category: 'Salé',
     image: '/assets/quiches.jpg',
-    price: 400,
-    description: 'Pâte brisée croustillante pur beurre, appareil crémeux au parmesan de 24 mois d\'affinage, asperges sauvages de saison et jeunes pousses.',
-    highlight: 'Une texture d\'une légèreté aérienne, cuite à la perfection dorée.'
-  },
-  {
-    id: 'pastels',
-    title: 'Pastels',
-    frenchTitle: 'Pastels Dorés d\'Orient',
-    category: 'Salé',
-    image: '/assets/pastels.jpg',
-    price: 200,
-    description: 'Feuilleté ultra-croustillant garni d\'un effiloché de volaille aux épices douces d\'Orient et coriandre fraîche ciselée.',
-    highlight: 'Une escale ensoleillée et croustillante qui éveille instantanément les sens.'
+    price: 5000,
+    description: 'Pâte brisée croustillante et garniture fondante aux herbes fines.',
+    highlight: 'Une bouchée gourmande au goût authentique.'
   },
   {
     id: 'hotdogs',
@@ -140,50 +100,477 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Le Hot-Dog Chic',
     category: 'Salé',
     image: '/assets/hot-dog.jpg',
-    price: 350,
-    description: 'Brioche moelleuse aérienne, saucisse artisanale de veau, moutarde douce au miel de fleurs de lavande et oignons frits croquants.',
-    highlight: 'La gourmandise régressive d\'une fête foraine réinterprétée avec chic.'
+    price: 6000,
+    description: 'Pain brioché, saucisse artisanale et garniture savoureuse.',
+    highlight: 'La gourmandise dans un format miniature.'
   },
   {
-    id: 'pizza',
-    title: 'Mini Pizza',
-    frenchTitle: 'Pizzettas à la Truffe d\'Été',
+    id: 'pastels',
+    title: 'Pastels',
+    frenchTitle: 'Pastels Poisson ou Viande',
     category: 'Salé',
-    image: '/assets/mini-pizza.jpg',
-    price: 350,
-    description: 'Pâte artisanale maturée 72 heures, fine crème de truffe blanche d\'Alba, burrata crémeuse crémeuse et roquette sauvage fleurie.',
-    highlight: 'Une fine bouchée d\'Italie, d\'une intensité gustative inoubliable.'
+    image: '/assets/pastels.jpg',
+    price: 2000,
+    description: 'Pastels croustillants garnis selon votre choix.',
+    highlight: 'Un incontournable des réceptions.'
   },
   {
-    id: 'verrines-salees',
-    title: 'Verrines salées',
-    frenchTitle: 'L\'Orfèvrerie Salée',
+    id: 'ailerons',
+    title: 'Ailerons de Poulet',
+    frenchTitle: 'Ailerons Marinés',
     category: 'Salé',
-    image: '/assets/verrines-sales.jpg',
-    price: 400,
-    description: 'Superposition graphique d\'avocat crémeux, tartare de saumon sauvage fumé de Norvège au pamplemousse et perles d\'algues.',
-    highlight: 'Un joyau de fraîcheur et de couleurs servi dans un verre à facettes d\'orfèvre.'
+    image: '/assets/ailerons-poulet.jpg',
+    price: 4000,
+    description: 'Ailerons marinés puis rôtis jusqu\'à obtenir une peau croustillante.',
+    highlight: 'Parfaits pour les amateurs de saveurs généreuses.'
   },
   {
-    id: 'verrines-sucrees',
-    title: 'Verrines sucrées',
-    frenchTitle: 'Les Trésors de Verre',
+    id: 'wrap-poulet',
+    title: 'Wraps au Poulet Pané',
+    frenchTitle: 'Wraps Gourmands',
+    category: 'Salé',
+    image: '/assets/wrap-poulet.jpg',
+    price: 8500,
+    description: 'Wraps garnis de poulet pané croustillant et de légumes frais.',
+    highlight: 'Une alliance parfaite entre fraîcheur et gourmandise.'
+  },
+  {
+    id: 'wrap-jambon',
+    title: 'Roulés de Wraps au Jambon',
+    frenchTitle: 'Wraps Roulés',
+    category: 'Salé',
+    image: '/assets/wrap-jambon.png',
+    price: 5000,
+    description: 'Délicats roulés au jambon et fromage frais.',
+    highlight: 'Élégants et faciles à déguster.'
+  },
+  {
+    id: 'feuillete-saucisse',
+    title: 'Roulés de Saucisses Feuilletées',
+    frenchTitle: 'Feuilletés Dorés',
+    category: 'Salé',
+    image: '/assets/feuillete-saucisse.jpg',
+    price: 5000,
+    description: 'Pâte feuilletée pur beurre garnie de saucisses.',
+    highlight: 'Le plaisir du croustillant à chaque bouchée.'
+  },
+  {
+    id: 'mini-tacos-viande',
+    title: 'Mini Tacos Viande',
+    frenchTitle: 'Mini Tacos',
+    category: 'Salé',
+    image: '/assets/mini-tacos-viande.jpg',
+    price: 7500,
+    description: 'Mini tacos garnis de viande tendre et de sauce maison.',
+    highlight: 'Un format idéal pour les événements.'
+  },
+  {
+    id: 'mini-tacos-poulet',
+    title: 'Mini Tacos Poulet',
+    frenchTitle: 'Mini Tacos',
+    category: 'Salé',
+    image: '/assets/mini-tacos-poulet.jpg',
+    price: 10000,
+    description: 'Mini tacos au poulet savoureux et généreusement garnis.',
+    highlight: 'Une création gourmande qui fait l\'unanimité.'
+  },
+  {
+    id: 'nems',
+    title: 'Nems',
+    frenchTitle: 'Nems Croustillants',
+    category: 'Salé',
+    image: '/assets/nems.jpg',
+    price: 4000,
+    description: 'Nems dorés et croustillants accompagnés de leur sauce.',
+    highlight: 'Une touche asiatique pour vos buffets.'
+  },
+  {
+    id: 'brochette-poulet',
+    title: 'Brochettes de Poulet',
+    frenchTitle: 'Poulet Mariné',
+    category: 'Salé',
+    image: '/assets/brochette-poulet.jpg',
+    price: 6000,
+    description: 'Brochettes de poulet marinées et grillées.',
+    highlight: 'Une valeur sûre pour toutes les occasions.'
+  },
+  {
+    id: 'brochette-viande',
+    title: 'Brochettes de Viande',
+    frenchTitle: 'Viande Grillée',
+    category: 'Salé',
+    image: '/assets/brochette-viande.jpg',
+    price: 6000,
+    description: 'Brochettes de viande tendres et parfumées.',
+    highlight: 'Une cuisson maîtrisée pour une saveur incomparable.'
+  },
+  {
+    id: 'tacos-mexicain-viande',
+    title: 'Tacos Mexicain Viande',
+    frenchTitle: 'Saveurs Mexicaines',
+    category: 'Salé',
+    image: '/assets/tacos-mexicain-viande.jpg',
+    price: 5000,
+    description: 'Tacos garnis de viande assaisonnée aux épices mexicaines.',
+    highlight: 'Une explosion de saveurs.'
+  },
+  {
+    id: 'tacos-mexicain-poulet',
+    title: 'Tacos Mexicain Poulet',
+    frenchTitle: 'Saveurs Mexicaines',
+    category: 'Salé',
+    image: '/assets/tacos-mexicain-poulet.jpg',
+    price: 6000,
+    description: 'Tacos garnis de poulet mariné aux épices.',
+    highlight: 'Une spécialité qui séduit à chaque dégustation.'
+  },
+    {
+    id: 'navette-thon',
+    title: 'Navette au Thon',
+    frenchTitle: 'Navettes Garnies',
+    category: 'Salé',
+    image: '/assets/navette-thon.png',
+    price: 5000,
+    description: 'Petits pains moelleux garnis d\'une préparation onctueuse au thon.',
+    highlight: 'Idéal pour les cocktails et buffets.'
+  },
+   {
+    id: 'cake-nature-mini',
+    title: 'Mini Cake Nature',
+    frenchTitle: 'Mini Cake Maison',
     category: 'Sucré',
-    image: '/assets/verrines-sucrees.jpg',
-    price: 400,
-    description: 'Panna cotta onctueuse à la gousse de vanille Bourbon de Madagascar, coulis de framboises sauvages et brisures de meringues à l\'or.',
-    highlight: 'Une douceur aérienne, touche finale de vos plus beaux banquets.'
+    image: '/assets/cake-nature-mini.jpg',
+    price: 2500,
+    description: 'Mini cakes moelleux préparés selon une recette artisanale.',
+    highlight: 'Une douceur simple et authentique.'
+  },
+  {
+    id: 'cake-marbre-mini',
+    title: 'Mini Cake Marbré',
+    frenchTitle: 'Mini Cake Marbré',
+    category: 'Sucré',
+    image: '/assets/cake-marbré-mini.jpg',
+    price: 3000,
+    description: 'Mini cakes marbrés au chocolat et à la vanille.',
+    highlight: 'L\'équilibre parfait entre douceur et gourmandise.'
+  },
+  {
+    id: 'cake-nature',
+    title: 'Barre de Cake Nature',
+    frenchTitle: 'Cake Maison',
+    category: 'Sucré',
+    image: '/assets/cake-nature.jpg',
+    price: 2500,
+    description: 'Cake nature généreux et moelleux.',
+    highlight: 'Parfait pour accompagner vos boissons chaudes.'
+  },
+  {
+    id: 'cake-marbre',
+    title: 'Barre de Cake Marbré',
+    frenchTitle: 'Cake Marbré',
+    category: 'Sucré',
+    image: '/assets/cake-marbré.jpg',
+    price: 3000,
+    description: 'Cake marbré au chocolat et à la vanille.',
+    highlight: 'Une recette intemporelle appréciée de tous.'
+  },
+  {
+    id: 'crepes-nutella',
+    title: 'Crêpes Nutella',
+    frenchTitle: 'Les Crêpes Gourmandes',
+    category: 'Sucré',
+    image: '/assets/crepe-nutella.jpeg',
+    price: 4000,
+    description: 'Crêpes fines garnies de Nutella.',
+    highlight: 'Le plaisir des petits comme des grands.'
+  },
+  {
+    id: 'crepes-nature',
+    title: 'Crêpes Nature',
+    frenchTitle: 'Les Crêpes Maison',
+    category: 'Sucré',
+    image: '/assets/crepes-nature.jpg',
+    price: 2000,
+    description: 'Crêpes maison légères et moelleuses.',
+    highlight: 'À savourer selon vos envies.'
+  },
+  {
+    id: 'sushi-crepe',
+    title: 'Sushi Crêpe',
+    frenchTitle: 'Création Originale',
+    category: 'Sucré',
+    image: '/assets/sushi-crepe.jpeg',
+    price: 10000,
+    description: 'Crêpes roulées et découpées façon sushi avec différentes garnitures.',
+    highlight: 'Une présentation élégante et surprenante.'
+  },
+  {
+    id: 'brownies',
+    title: 'Brownies (12 pièces)',
+    frenchTitle: 'Brownies Fondants',
+    category: 'Sucré',
+    image: '/assets/brownies.jpg',
+    price: 5000,
+    description: 'Brownies intensément chocolatés, moelleux à cœur.',
+    highlight: 'Un incontournable pour les amateurs de chocolat.'
+  },
+  {
+    id: 'verrine-oreo-mini',
+    title: 'Mini Verrine Oreo',
+    frenchTitle: 'Crème Oreo',
+    category: 'Sucré',
+    image: '/assets/verrine-oreo-mini.png',
+    price: 5000,
+    description: 'Crème onctueuse et biscuits Oreo émiettés.',
+    highlight: 'Une douceur irrésistible.'
+  },
+  {
+    id: 'verrine-nutella-mini',
+    title: 'Mini Verrine Nutella',
+    frenchTitle: 'Crème Nutella',
+    category: 'Sucré',
+    image: '/assets/verrine-nutella-mini.jpg',
+    price: 5000,
+    description: 'Crème légère au Nutella.',
+    highlight: 'Une gourmandise chocolatée.'
+  },
+  {
+    id: 'verrine-speculos-mini',
+    title: 'Mini Verrine Spéculos',
+    frenchTitle: 'Crème Spéculos',
+    category: 'Sucré',
+    image: '/assets/verrine-speculos-mini.png',
+    price: 6000,
+    description: 'Crème légère et biscuits spéculos.',
+    highlight: 'Une saveur délicatement épicée.'
+  },
+  {
+    id: 'verrine-tropical-mini',
+    title: 'Mini Verrine Tropicale',
+    frenchTitle: 'Fruits de Saison',
+    category: 'Sucré',
+    image: '/assets/verrine-tropicale-mini.jpg',
+    price: 5000,
+    description: 'Mélange de fruits frais de saison et crème légère.',
+    highlight: 'Une note fruitée et rafraîchissante.'
+  },
+  {
+    id: 'verrine-oreo',
+    title: 'Grande Verrine Oreo',
+    frenchTitle: 'Crème Oreo',
+    category: 'Sucré',
+    image: '/assets/verrine-oreo.png',
+    price: 10000,
+    description: 'Version généreuse de notre verrine Oreo.',
+    highlight: 'Encore plus de gourmandise.'
+  },
+  {
+    id: 'verrine-nutella',
+    title: 'Grande Verrine Nutella',
+    frenchTitle: 'Crème Nutella',
+    category: 'Sucré',
+    image: '/assets/verrine-nutella.jpg',
+    price: 10000,
+    description: 'Une grande verrine riche en saveurs chocolatées.',
+    highlight: 'Pour les amateurs de Nutella.'
+  },
+  {
+    id: 'verrine-speculos',
+    title: 'Grande Verrine Spéculos',
+    frenchTitle: 'Crème Spéculos',
+    category: 'Sucré',
+    image: '/assets/verrine-speculos.png',
+    price: 12000,
+    description: 'Grande verrine aux biscuits spéculos.',
+    highlight: 'Une finition élégante pour vos réceptions.'
+  },
+  {
+    id: 'verrine-tropicale',
+    title: 'Grande Verrine Tropicale',
+    frenchTitle: 'Fruits de Saison',
+    category: 'Sucré',
+    image: '/assets/verrine-tropicale.jpg',
+    price: 5000,
+    description: 'Grande verrine garnie de fruits frais de saison.',
+    highlight: 'Fraîcheur et légèreté.'
+  },
+{
+  id: 'bora-bora-mocktail',
+  title: 'Bora Bora',
+  frenchTitle: 'Bora Bora Sans Alcool',
+  category: 'Boisson',
+  image: '/assets/bora-bora.jpg',
+  price: 2000,
+  description: 'Un cocktail sans alcool aux saveurs fruitées et rafraîchissantes.',
+  highlight: 'Une explosion de fraîcheur tropicale.'
+},
+{
+  id: 'mojito-mocktail',
+  title: 'Mojito',
+  frenchTitle: 'Mojito Sans Alcool',
+  category: 'Boisson',
+  image: '/assets/mojito.jpg',
+  price: 2000,
+  description: 'Une version sans alcool du célèbre mojito, fraîche et légère.',
+  highlight: 'Le goût du mojito sans alcool.'
+},
+{
+  id: 'pina-colada-mocktail',
+  title: 'Piña Colada',
+  frenchTitle: 'Piña Colada Sans Alcool',
+  category: 'Boisson',
+  image: '/assets/pina-colada.png',
+  price: 2000,
+  description: 'Un mélange onctueux de fruits tropicaux sans alcool.',
+  highlight: 'Une douceur exotique et crémeuse.'
+},
+{
+  id: 'cocktail-by-dreyy-mocktail',
+  title: 'Cocktail by Dreyy',
+  frenchTitle: 'Création Signature Sans Alcool',
+  category: 'Boisson',
+  image: '/assets/cocktail-by-dreyy.png',
+  price: 2000,
+  description: 'Une création originale sans alcool imaginée par Dreyy.',
+  highlight: 'Une signature unique et raffinée.'
+},
+
+{
+  id: 'bora-bora-alcoolise',
+  title: 'Bora Bora',
+  frenchTitle: 'Bora Bora Signature',
+  category: 'Alcoolisé',
+  image: '/assets/bora-bora.jpg',
+  price: 3000,
+  description: 'Un cocktail tropical avec alcool aux notes fruitées.',
+  highlight: 'Un équilibre parfait entre douceur et caractère.'
+},
+{
+  id: 'mojito-alcoolise',
+  title: 'Mojito',
+  frenchTitle: 'Mojito Traditionnel',
+  category: 'Alcoolisé',
+  image: '/assets/mojito.jpg',
+  price: 3000,
+  description: 'Un mojito classique préparé avec des ingrédients frais.',
+  highlight: 'Fraîcheur, menthe et élégance.'
+},
+{
+  id: 'pina-colada-alcoolise',
+  title: 'Piña Colada',
+  frenchTitle: 'Piña Colada Signature',
+  category: 'Alcoolisé',
+  image: '/assets/pina-colada.png',
+  price: 3000,
+  description: 'Un cocktail tropical onctueux avec alcool.',
+  highlight: 'Une invitation au voyage.'
+},
+{
+  id: 'cocktail-by-dreyy-alcoolise',
+  title: 'Cocktail by Dreyy',
+  frenchTitle: 'Création Signature Dreyy',
+  category: 'Alcoolisé',
+  image: '/assets/cocktail-by-dreyy.png',
+  price: 3000,
+  description: 'Une création exclusive avec alcool signée Dreyy.',
+  highlight: 'L’originalité d’une recette unique.'
+},
+  {
+    id: 'jus-bissap',
+    title: 'Jus De Bissap',
+    frenchTitle: 'Jus Naturels',
+    category: 'Boisson',
+    image: '/assets/bissap.jpg',
+    price: 500,
+    description: 'Bissap floral et légèrement acidulé, préparé avec soin pour un goût authentique.',
+    highlight: 'Une explosion de saveurs rouges et rafraîchissantes.'
+  },
+  {
+    id: 'jus-tomy',
+    title: 'Jus De Tomy',
+    frenchTitle: 'Jus Naturels',
+    category: 'Boisson',
+    image: '/assets/tomy.jpg',
+    price: 500,
+    description: 'Un jus tropical et sucré qui rappelle les saveurs exotiques des îles.',
+    highlight: 'Un voyage ensoleillé dans chaque gorgée.'
+  },
+  {
+    id: 'jus-gingembre',
+    title: 'Jus De Gingembre',
+    frenchTitle: 'Jus Naturels',
+    category: 'Boisson',
+    image: '/assets/gingembre.jpg',
+    price: 500,
+    description: 'Gingembre frais mélangé à des fruits pour un équilibre piquant et tonique.',
+    highlight: 'Un coup de fouet épicé pour réveiller les sens.'
+  },
+  {
+    id: 'jus-citron',
+    title: 'Jus De Citron',
+    frenchTitle: 'Jus Naturels',
+    category: 'Boisson',
+    image: '/assets/citron.png',
+    price: 500,
+    description: 'Citron pressé à la perfection, doux et acidulé pour une grande fraîcheur.',
+    highlight: 'Une sensation pétillante et acidulée.'
+  },
+  {
+    id: 'breakfast',
+    title: 'Petit Déjeuner',
+    frenchTitle: 'Brunch Signature',
+    category: 'Brunch',
+    image: '/assets/petit-dejeuner.jpg',
+    price: 3500,
+    description: 'Assortiment de viennoiseries, boissons chaudes et gourmandises.',
+    highlight: 'Commencez la journée avec élégance.'
   },
   {
     id: 'boxes',
     title: 'Food Boxes',
     frenchTitle: 'Les Écrins de la Maison',
-    category: 'Prestige',
+    category: 'Forfait',
     image: '/assets/boxes.jpeg',
     price: 3500,
-    description: 'Une sélection de 24 pièces salées et sucrées d\'exception présentées dans un coffret vert sauge et or, prêtes à être partagées.',
-    highlight: 'L\'expérience gastronomique de la Maison Drey condensée dans un écrin de luxe.'
-  }
+    description: 'Sélection de créations salées et sucrées présentées dans un coffret raffiné.',
+    highlight: 'Le meilleur de La Maison Dreyy dans un seul coffret.'
+  },
+  {
+  id: 'forfait-essentiel',
+  title: 'Forfait Essentiel',
+  frenchTitle: 'Buffet Signature • 30 Personnes',
+  category: 'Forfait',
+  image: '/assets/forfait-essentiel.jpg',
+  price: 300000,
+  description:
+    'Un buffet complet pour 30 personnes comprenant 6 pièces apéritives salées au choix, 2 cocktails (alcoolisés ou non), 1 plat principal au choix, 2 accompagnements, le dressage complet du buffet ainsi que le matériel de présentation.',
+  highlight:
+    '30 personnes • 10 000 FCFA par personne'
+},
+{
+  id: 'forfait-prestige',
+  title: 'Forfait Prestige',
+  frenchTitle: 'Buffet Signature • 50 Personnes',
+  category: 'Forfait',
+  image: '/assets/forfait-prestige.jpg',
+  price: 475000,
+  description:
+    'Un buffet raffiné pour 50 personnes comprenant 7 pièces apéritives salées au choix, 2 cocktails (alcoolisés ou non), 1 plat principal au choix, 2 accompagnements, le dressage complet du buffet ainsi que le matériel de présentation.',
+  highlight:
+    '50 personnes • 9 500 FCFA par personne'
+},
+{
+  id: 'forfait-signature',
+  title: 'Forfait Signature',
+  frenchTitle: 'Buffet Signature • 100 Personnes',
+  category: 'Forfait',
+  image: '/assets/forfait-signature.jpg',
+  price: 900000,
+  description:
+    'Notre formule la plus complète pour 100 personnes comprenant 8 pièces apéritives salées au choix, 3 cocktails (alcoolisés ou non), 1 plat principal au choix, 2 accompagnements, le dressage complet du buffet ainsi que le matériel de présentation.',
+  highlight:
+    '100 personnes et plus • 9 000 FCFA par personne'
+},
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
@@ -221,16 +608,16 @@ export const REVIEWS: Review[] = [
   {
     id: 'rev-1',
     author: 'Camara Mariam ',
-    role: 'Mariage au Château d\'Angré',
-    text: '« Faire appel à la Maison Drey fut la meilleure décision de notre mariage. Tout a été d\'un raffinement inouï et d\'une finesse incomparable. Nos invités en parlent encore comme d\'une expérience hors du temps. »',
+    role: 'Mariage',
+    text: '« Faire appel à la Maison dreyy fut la meilleure décision de notre mariage. Tout a été d\'un raffinement inouï et d\'une finesse incomparable. Nos invités en parlent encore comme d\'une expérience hors du temps. »',
     rating: 5,
     image: '/assets/review1.jpg'
   },
   {
     id: 'rev-2',
     author: 'Keran Youssouf',
-    role: 'Anniversaire d\'enfant à Cocody',
-    text: '« Un événement mémorable et une cuisine exceptionnelle. La Maison Drey a su transformer la journée d\'anniversaire de notre fils en un véritable moment de bonheur. »',
+    role: 'Anniversaire',
+    text: '« Un événement mémorable et une cuisine exceptionnelle. La Maison dreyy a su transformer la journée d\'anniversaire de notre fils en un véritable moment de bonheur. »',
     rating: 5,
     image: '/assets/review2.jpg'
   }

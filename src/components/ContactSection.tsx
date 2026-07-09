@@ -7,28 +7,28 @@ export default function ContactSection() {
     name: '',
     email: '',
     phone: '',
-    guests: '100',
-    type: 'Mariage',
     message: ''
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
+const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        guests: '100',
-        type: 'Mariage',
-        message: ''
-      });
-    }, 5000);
-  };
+  e.preventDefault();
 
+  const message = `✨ Bonjour La Maison dreyy,
+
+Je souhaite organiser un événement d'exception.
+
+👤 Nom : ${formData.name}
+📧 Email : ${formData.email}
+📞 Téléphone : ${formData.phone}
+📝 Description du projet :
+${formData.message}
+
+Merci de me recontacter afin d'échanger sur mon projet.`;
+
+  const whatsappUrl = `https://wa.me/2250702925688?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappUrl, "_blank");
+};
   return (
     <section id="contact" className="py-24 bg-[#FFFDF9] border-t border-[#E8C89A]/10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -73,7 +73,7 @@ export default function ContactSection() {
                 </a>
 
                 <a
-                  href="https://wa.me/2250504272827"
+                  href="https://wa.me/2250702925688"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-start gap-4 p-4 bg-[#FBF8F3] hover:bg-[#E8C89A]/10 border border-[#E8C89A]/20 transition-all duration-300 group"
@@ -101,7 +101,7 @@ export default function ContactSection() {
                 <span className="block font-sans text-[10px] uppercase tracking-widest text-[#B7B68A] font-semibold">Suivre Notre Art de Vivre</span>
                 <div className="flex gap-4">
                   <a
-                    href="https://www.instagram.com/la.maison.dreyy/"
+                    href="https://www.instagram.com/la.maison.dreyyy/"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 px-4 py-2 border border-[#E8C89A]/30 hover:border-[#D8B26A] bg-[#FFFDF9] text-[#4A4A37] hover:text-[#D8B26A] transition-all text-xs font-sans tracking-wider uppercase font-semibold"
@@ -109,7 +109,7 @@ export default function ContactSection() {
                     <Instagram size={14} /> Instagram
                   </a>
                   <a
-                    href="https://facebook.com/la.maison.dreyy/"
+                    href="https://www.facebook.com/profile.php?id=61566334940372&mibextid=wwXIfr"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 px-4 py-2 border border-[#E8C89A]/30 hover:border-[#D8B26A] bg-[#FFFDF9] text-[#4A4A37] hover:text-[#D8B26A] transition-all text-xs font-sans tracking-wider uppercase font-semibold"
@@ -123,15 +123,11 @@ export default function ContactSection() {
 
           {/* Luxury Contact Form - Right (7 cols) */}
           <div className="lg:col-span-7 bg-[#FBF8F3] border border-[#E8C89A]/30 p-8 md:p-12 shadow-md flex flex-col justify-between">
-            <AnimatePresence mode="wait">
-              {!isSubmitted ? (
-                <motion.form
-                  key="form"
-                  initial={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onSubmit={handleSubmit}
-                  className="space-y-6"
-                >
+
+  <motion.form
+    onSubmit={handleSubmit}
+    className="space-y-6"
+  >
                   <div className="flex items-center gap-2 pb-2">
                     <Mail size={16} className="text-[#D8B26A]" />
                     <h3 className="font-serif text-2xl text-[#4A4A37] tracking-tight">Formulaire de Contact</h3>
@@ -181,44 +177,10 @@ export default function ContactSection() {
                         className="w-full bg-[#FFFDF9] border border-[#E8C89A]/40 py-3 px-4 text-xs font-sans text-[#4A4A37] outline-none focus:border-[#D8B26A]"
                       />
                     </div>
-
-                    <div>
-                      <label className="block font-sans text-[10px] uppercase tracking-widest text-[#4A4A37] font-semibold mb-2">
-                        Type de Réception
-                      </label>
-                      <select
-                        value={formData.type}
-                        onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                        className="w-full bg-[#FFFDF9] border border-[#E8C89A]/40 py-3 px-4 text-xs font-sans text-[#4A4A37] outline-none focus:border-[#D8B26A]"
-                      >
-                        <option value="Mariage">Mariage</option>
-                        <option value="Corporate">Corporate / Séminaire</option>
-                        <option value="Brunch">Brunch d'Exception</option>
-                        <option value="Anniversaire">Événement Privé / Anniversaire</option>
-                      </select>
-                    </div>
                   </div>
-
                   <div>
                     <label className="block font-sans text-[10px] uppercase tracking-widest text-[#4A4A37] font-semibold mb-2">
-                      Nombre d'invités estimé
-                    </label>
-                    <select
-                      value={formData.guests}
-                      onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                      className="w-full bg-[#FFFDF9] border border-[#E8C89A]/40 py-3 px-4 text-xs font-sans text-[#4A4A37] outline-none focus:border-[#D8B26A]"
-                    >
-                      <option value="01-20">De 01 à 20 convives</option>
-                      <option value="20-50">De 20 à 50 convives</option>
-                      <option value="50-100">De 50 à 100 convives</option>
-                      <option value="100-200">De 100 à 200 convives</option>
-                      <option value="200+">Plus de 200 convives</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block font-sans text-[10px] uppercase tracking-widest text-[#4A4A37] font-semibold mb-2">
-                      Décrivez-nous votre projet d'exception
+                      Décrivez-nous votre commande
                     </label>
                     <textarea
                       required
@@ -237,7 +199,6 @@ export default function ContactSection() {
                     Envoyer ma demande d'exception
                   </button>
                 </motion.form>
-              ) : (
                 <motion.div
                   key="success"
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -250,22 +211,20 @@ export default function ContactSection() {
                   </div>
                   <div className="space-y-3">
                     <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-[#B7B68A] font-semibold">
-                      Demande Reçue avec Succès
+                      Commande Reçue avec Succès
                     </span>
                     <h3 className="font-serif text-3xl text-[#4A4A37] tracking-tight">
-                      Votre projet est entre nos mains.
+                      Votre commande est entre nos mains.
                     </h3>
                     <p className="font-sans text-xs md:text-sm text-[#4A4A37]/80 max-w-md mx-auto leading-relaxed">
-                      Notre conseiller privé étudie actuellement votre scénographie et votre concept de réception. Un devis de prestige sur-mesure vous sera formulé par email ou téléphone sous 24 heures.
+                      Notre conseiller privé étudie actuellement votre commande. Un devis sur-mesure vous sera formulé par whatsapp.
                     </p>
                   </div>
                   <div className="h-[1px] bg-[#E8C89A]/30 w-16"></div>
                   <p className="font-serif italic text-xs text-[#B7B68A]">
-                    « Merci de faire confiance à la Maison Drey pour orner vos plus belles célébrations. »
+                    « Merci de faire confiance à la Maison dreyy pour orner vos plus belles célébrations. »
                   </p>
                 </motion.div>
-              )}
-            </AnimatePresence>
           </div>
 
         </div>

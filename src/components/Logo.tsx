@@ -10,14 +10,14 @@ export default function Logo({
   variant = "combined",
   size = 80,
 }: LogoProps) {
-  const logoSrc = "/assets/logo.jpeg";
+  const logoSrc = "/assets/logo.png";
 
   if (variant === "combined") {
     return (
       <div className={`flex items-center gap-2.5 md:gap-4 ${className}`}>
         <img
           src={logoSrc}
-          alt="La Maison Drey"
+          alt="La Maison dreyy"
           width={size}
           height={size}
           className="shrink-0 rounded-full object-contain"
@@ -26,7 +26,7 @@ export default function Logo({
 
         <div className="flex flex-col items-start justify-center">
           <span className="font-serif text-sm sm:text-lg md:text-2xl tracking-[0.12em] md:tracking-[0.15em] uppercase text-gold-accent font-medium leading-none">
-            LA MAISON DREY
+            LA MAISON dreyy
           </span>
 
           <div className="flex items-center gap-1.5 md:gap-2 w-full mt-0.5 md:mt-1">
@@ -62,7 +62,7 @@ export default function Logo({
         className={`flex flex-col items-center justify-center text-center ${className}`}
       >
         <span className="font-serif text-2xl md:text-3xl tracking-[0.2em] uppercase text-gold-accent">
-          LA MAISON DREY
+          LA MAISON dreyy
         </span>
 
         <div className="flex items-center gap-3 w-full max-w-[150px] mt-1">
@@ -88,7 +88,7 @@ export default function Logo({
   return (
     <img
       src={logoSrc}
-      alt="La Maison Drey"
+      alt="La Maison dreyy"
       width={size}
       height={size}
       className={`object-contain rounded-full ${className}`}

@@ -22,7 +22,7 @@ export default function PrestationsSection() {
             <div className="h-[1px] bg-[#E8C89A]/50 w-12"></div>
           </div>
           <p className="font-sans text-sm md:text-base text-[#4A4A37]/70 mt-6 max-w-2xl mx-auto">
-            Chaque réception de la Maison Drey est une pièce unique. Nous allions l'art de la table, la décoration florale et la haute cuisine pour donner vie à vos rêves les plus audacieux.
+            Chaque réception de la Maison dreyy est une pièce unique. Nous allions l'art de la table, la décoration florale et la haute cuisine pour donner vie à vos rêves les plus audacieux.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function PrestationsSection() {
                     {/* Visual Stamp on top right */}
                     <div className="absolute top-4 right-4 bg-[#FFFDF9]/95 backdrop-blur-sm border border-[#E8C89A]/30 py-2 px-3 flex items-center gap-2">
                       <span className="font-sans text-[8px] uppercase tracking-[0.25em] text-[#4A4A37] font-semibold">
-                        Maison Dreyy • {prestation.title}
+                        Maison dreyyy • {prestation.title}
                       </span>
                     </div>
 

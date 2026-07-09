@@ -89,7 +89,7 @@ export default function Header({ onBookClick, onExploreClick }: HeaderProps) {
               className="bg-[#4A4A37] hover:bg-[#D8B26A] text-[#FFFDF9] font-sans text-xs uppercase tracking-[0.2em] font-semibold px-6 py-3 border border-transparent hover:border-[#E8C89A] transition-all duration-500 rounded-none shadow-sm flex items-center gap-2"
             >
               <Calendar size={14} />
-              Réserver l'Exception
+              Commander
             </button>
           </div>
 
@@ -138,7 +138,7 @@ export default function Header({ onBookClick, onExploreClick }: HeaderProps) {
                 }}
                 className="w-full bg-[#4A4A37] text-center text-[#FFFDF9] font-sans text-xs uppercase tracking-[0.2em] font-semibold py-4 border border-[#E8C89A]/30"
               >
-                Réserver mon événement
+               Commander
               </button>
               <div className="flex justify-center gap-6 mt-4">
                 <a

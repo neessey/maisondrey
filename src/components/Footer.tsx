@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Copyrights & Accents */}
           <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl text-[10px] font-sans tracking-widest text-[#B7B68A] uppercase gap-6 md:gap-0">
             <span>
-              © {currentYear} La Maison Dreyy. Tous droits réservés.
+              © {currentYear} La Maison dreyyy. Tous droits réservés.
             </span>
             <div className="flex items-center gap-1">
               <Shield size={10} className="text-[#D8B26A]" />
