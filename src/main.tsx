@@ -7,8 +7,8 @@ import MobileOnly from './components/MobileOnly.tsx';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
    
-     {/* <MobileOnly> */}
+     <MobileOnly>
      <App />
-      {/* </MobileOnly> */}
+      </MobileOnly>
   </StrictMode>,
 );
