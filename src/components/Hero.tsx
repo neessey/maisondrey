@@ -51,7 +51,7 @@ export default function Hero({ onDiscoverClick, onBookClick }: HeroProps) {
         >
           <span className="h-[1px] w-4 sm:w-8 bg-[#E8C89A] shrink-0"></span>
           <span className="font-sans text-[8px] sm:text-[10px] md:text-xs tracking-[0.12em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#E8C89A] font-semibold text-center">
-            Maison de Réception & Haute Gastronomie
+            Maison de Réception & Gastronomie
           </span>
           <span className="h-[1px] w-4 sm:w-8 bg-[#E8C89A] shrink-0"></span>
         </motion.div>

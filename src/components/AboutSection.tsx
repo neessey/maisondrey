@@ -60,16 +60,16 @@ export default function AboutSection() {
 
               <div className="h-[1px] bg-[#E8C89A]/40 w-24 my-6"></div>
 
-              <p className="font-sans text-sm md:text-base text-[#4A4A37]/80 leading-relaxed space-y-4">
-                La Maison dreyy ne propose pas de simples buffets. Nous concevons de véritables scénographies culinaires sur-mesure. Notre approche mêle la rigueur de la gastronomie à l'élégance contemporaine des plus belles réceptions internationales. 
-                <br /><br />
-                Que ce soit pour un mariage intimiste dans un château séculaire, un lancement de produit pour une maison de haute couture ou un brunch dominical, nos maîtres de cérémonie et créateurs culinaires subliment vos instants les plus précieux avec un professionnalisme d'orfèvre.
-              </p>
+             <p className="font-sans text-sm md:text-base text-[#4A4A37]/80 leading-relaxed">
+  Chez La Maison Dreyy, nous préparons bien plus que des buffets. Nous créons des expériences gourmandes qui s'adaptent à votre événement, à vos envies et à votre style.
+  <br /><br />
+  Mariage, anniversaire, événement d'entreprise, brunch ou réception privée, notre équipe met tout en œuvre pour offrir une cuisine raffinée, un service de qualité et une présentation élégante afin de rendre chaque moment inoubliable.
+</p>
 
               <div className="pt-6">
                 <div className="border border-[#B7B68A] hover:border-[#D8B26A] p-4 bg-[#FBF8F3] max-w-md">
                   <p className="font-serif italic text-xs text-[#B7B68A]">
-                    « Notre ambition n'est pas simplement de nourrir vos convives, mais de suspendre le temps pour leur offrir un voyage sensoriel inoubliable. »
+                    « Notre ambition n'est pas simplement de nourrir vos invités, mais de suspendre le temps pour leur offrir un voyage sensoriel inoubliable. »
                   </p>
                   <p className="font-sans text-[10px] uppercase tracking-widest text-[#4A4A37] font-semibold text-right mt-2">
                     — La Chef du restaurant, La Maison dreyy

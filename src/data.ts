@@ -345,18 +345,18 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Crème Oreo',
     category: 'Sucré',
     image: '/assets/verrine-oreo-mini.png',
-    price: 5000,
+    price: 7000,
     unit: '10 pièces',
     description: 'Crème onctueuse et biscuits Oreo émiettés.',
     highlight: 'Une douceur irrésistible.'
   },
   {
     id: 'verrine-nutella-mini',
-    title: 'Mini Verrine Nutella',
+    title: 'Mini Verrine Nutella Ferrero',
     frenchTitle: 'Crème Nutella',
     category: 'Sucré',
     image: '/assets/verrine-nutella-mini.jpg',
-    price: 5000,
+    price: 7000,
     unit: '10 pièces',
     description: 'Crème légère au Nutella.',
     highlight: 'Une gourmandise chocolatée.'
@@ -367,7 +367,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Crème Spéculos',
     category: 'Sucré',
     image: '/assets/verrine-speculos-mini.png',
-    price: 6000,
+    price: 7000,
     unit: '10 pièces',
     description: 'Crème légère et biscuits spéculos.',
     highlight: 'Une saveur délicatement épicée.'
@@ -378,7 +378,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Fruits de Saison',
     category: 'Sucré',
     image: '/assets/verrine-tropicale-mini.jpg',
-    price: 5000,
+    price: 7000,
     unit: '10 pièces',
     description: 'Mélange de fruits frais de saison et crème légère.',
     highlight: 'Une note fruitée et rafraîchissante.'
@@ -389,18 +389,18 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Crème Oreo',
     category: 'Sucré',
     image: '/assets/verrine-oreo.png',
-    price: 10000,
+    price: 12000,
     unit: '10 pièces',
     description: 'Version généreuse de notre verrine Oreo.',
     highlight: 'Encore plus de gourmandise.'
   },
   {
     id: 'verrine-nutella',
-    title: 'Grande Verrine Nutella',
+    title: 'Grande Verrine Nutella Ferrero',
     frenchTitle: 'Crème Nutella',
     category: 'Sucré',
     image: '/assets/verrine-nutella.jpg',
-    price: 10000,
+    price: 12000,
     unit: '10 pièces',
     description: 'Une grande verrine riche en saveurs chocolatées.',
     highlight: 'Pour les amateurs de Nutella.'
@@ -418,11 +418,11 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   },
   {
     id: 'verrine-tropicale',
-    title: 'Grande Verrine Tropicale',
+    title: 'Grande Verrine Fraise',
     frenchTitle: 'Fruits de Saison',
     category: 'Sucré',
     image: '/assets/verrine-tropicale.jpg',
-    price: 5000,
+    price: 15000,
     unit: '10 pièces',
     description: 'Grande verrine garnie de fruits frais de saison.',
     highlight: 'Fraîcheur et légèreté.'
@@ -442,7 +442,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   id: 'mojito-mocktail',
   title: 'Mojito',
   frenchTitle: 'Mojito Sans Alcool',
-  category: 'Boisson',
+  category: 'Non Alcoolisé',
   image: '/assets/mojito.jpg',
   price: 2000,
   unit: 'L\'unité',
@@ -453,7 +453,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   id: 'pina-colada-mocktail',
   title: 'Piña Colada',
   frenchTitle: 'Piña Colada Sans Alcool',
-  category: 'Boisson',
+  category: 'Non Alcoolisé',
   image: '/assets/pina-colada.png',
   price: 2000,
   unit: 'L\'unité',
@@ -464,7 +464,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
   id: 'cocktail-by-dreyy-mocktail',
   title: 'Cocktail by Dreyy',
   frenchTitle: 'Création Signature Sans Alcool',
-  category: 'Boisson',
+  category: 'Non Alcoolisé',
   image: '/assets/cocktail-by-dreyy.png',
   price: 2000,
   unit: 'L\'unité',
@@ -520,7 +520,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     id: 'jus-bissap',
     title: 'Jus De Bissap',
     frenchTitle: 'Jus Naturels',
-    category: 'Boisson',
+    category: 'Non Alcoolisé',
     image: '/assets/bissap.jpg',
     price: 500,
     unit: 'L\'unité',
@@ -531,7 +531,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     id: 'jus-tomy',
     title: 'Jus De Tomy',
     frenchTitle: 'Jus Naturels',
-    category: 'Boisson',
+    category: 'Non Alcoolisé',
     image: '/assets/tomy.jpg',
     price: 500,
     unit: 'L\'unité',
@@ -542,7 +542,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     id: 'jus-gingembre',
     title: 'Jus De Gingembre',
     frenchTitle: 'Jus Naturels',
-    category: 'Boisson',
+    category: 'Non Alcoolisé',
     image: '/assets/gingembre.jpg',
     price: 500,
     unit: 'L\'unité',
@@ -553,7 +553,7 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     id: 'jus-citron',
     title: 'Jus De Citron',
     frenchTitle: 'Jus Naturels',
-    category: 'Boisson',
+    category: 'Non Alcoolisé',
     image: '/assets/citron.png',
     price: 500,
     unit: 'L\'unité',
@@ -566,8 +566,8 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Brunch Signature',
     category: 'Brunch',
     image: '/assets/petit-dejeuner.jpg',
-    price: 3500,
-    unit: 'L\'unité',
+    price: 10000,
+    unit: 'A partir',
     description: 'Assortiment de viennoiseries, boissons chaudes et gourmandises.',
     highlight: 'Commencez la journée avec élégance.'
   },
@@ -577,8 +577,8 @@ export const SIGNATURE_FOODS: SignatureFood[] = [
     frenchTitle: 'Les Écrins de la Maison',
     category: 'Forfait',
     image: '/assets/boxes.jpeg',
-    price: 3500,
-    unit: 'L\'unité',
+     price: 10000,
+    unit: 'A partir',
     description: 'Sélection de créations salées et sucrées présentées dans un coffret raffiné.',
     highlight: 'Le meilleur de La Maison Dreyy dans un seul coffret.'
   },
@@ -677,43 +677,43 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     id: 'step-1',
     num: '01',
-    title: 'Réserver l\'instant',
-    description: 'Prenez contact avec notre conseiller d\'exception pour nous confier la date et le lieu de votre événement.'
+    title: 'Prise de contact',
+    description: 'Partagez la date, le lieu et les détails de votre événement afin de recevoir une proposition adaptée.'
   },
   {
     id: 'step-2',
     num: '02',
-    title: 'Concevoir le menu',
-    description: 'Élaborons ensemble un parcours culinaire et une sélection de signatures adaptés à l\'esprit de votre réception.'
+    title: 'Choix du menu',
+    description: 'Sélectionnez les plats, les boissons et les options qui correspondent à votre événement.'
   },
   {
     id: 'step-3',
     num: '03',
-    title: 'Validation & Devis',
-    description: 'Signature de notre accord et détails techniques finalisés par notre bureau d\'études événementielles.'
+    title: 'Validation du devis',
+    description: 'Le devis est envoyé pour validation. Après confirmation, la préparation de la commande commence.'
   },
   {
     id: 'step-4',
     num: '04',
-    title: 'Préparation d\'art',
-    description: 'Sélection rigoureuse des produits frais le matin même et confection minutieuse par nos artisans de prestige.'
+    title: 'Préparation',
+    description: 'Les plats sont préparés avec des produits frais et une attention particulière à chaque détail.'
   },
   {
     id: 'step-5',
     num: '05',
-    title: 'Livraison sécurisée',
-    description: 'Transport en liaison froide régulée dans nos véhicules privatifs pour garantir une fraîcheur et une hygiène absolues.'
+    title: 'Livraison',
+    description: 'La commande est livrée via Yango à l’adresse indiquée. Les frais de livraison sont à la charge du client.'
   },
   {
     id: 'step-6',
     num: '06',
-    title: 'Mise en scène',
-    description: 'Installation soignée de la table d\'honneur et mise en avant de notre vaisselle et art de table signature.'
+    title: 'Installation',
+    description: 'Installation et décoration soignée du buffet dans le thème du client.'
   },
   {
     id: 'step-7',
     num: '07',
-    title: 'Votre Événement',
-    description: 'Profitez sereinement de l\'instant présent aux côtés de vos convives, sublimés par l\'art de recevoir à la française.'
+    title: 'Profitez de votre événement',
+    description: 'Il ne reste plus qu’à profiter pleinement de ce moment avec vos invités.'
   }
 ];

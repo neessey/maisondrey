@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex flex-col items-center space-y-3">
             <Logo size={100} variant="circle" color="gold" />
             <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-[#B7B68A] font-semibold mt-4">
-              Maison de Réception & Haute Gastronomie
+              Maison de Réception & Gastronomie
             </span>
           </div>
 

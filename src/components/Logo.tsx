@@ -79,7 +79,7 @@ export default function Logo({
         </div>
 
         <span className="font-sans text-[9px] md:text-[10px] tracking-[0.3em] text-sage uppercase mt-1 font-medium">
-          Haute Gastronomie Événementielle
+           Gastronomie Événementielle
         </span>
       </div>
     );

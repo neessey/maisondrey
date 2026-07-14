@@ -13,7 +13,7 @@ export default function SignatureFoodSection({ selectedItems, onToggleItem }: Si
   const [activeCategory, setActiveCategory] = useState<string>('Tout');
   const [focusedFood, setFocusedFood] = useState<SignatureFood | null>(null);
 
-  const categories = ['Tout', 'Salé', 'Sucré', 'Boisson', 'Alcoolisé', 'Forfait'];
+  const categories = ['Tout', 'Salé', 'Sucré', 'Non Alcoolisé', 'Alcoolisé', 'Forfait'];
 
   const filteredFoods = activeCategory === 'Tout'
     ? SIGNATURE_FOODS

@@ -111,9 +111,9 @@ export default function ProcessSection() {
 
         {/* Process helper quote */}
         <div className="mt-32 text-center max-w-xl mx-auto">
-          <p className="font-serif italic text-sm text-[#B7B68A]">
-            « De l'ébauche créative à la communion finale de vos convives, notre protocole d'exception assure une fluidité totale à chaque étape. »
-          </p>
+         <p className="font-serif italic text-sm text-[#B7B68A]">
+  « Un accompagnement simple et soigné, pour que vous profitiez pleinement de votre événement. »
+</p>
         </div>
 
       </div>
