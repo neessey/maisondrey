@@ -39,3 +39,11 @@
     background: var(--color-gold-accent);
   }
 }
+@keyframes slowZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}

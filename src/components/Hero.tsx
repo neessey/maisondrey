@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { ChevronDown, Sparkles } from 'lucide-react';
 
@@ -6,21 +6,49 @@ interface HeroProps {
   onDiscoverClick: () => void;
   onBookClick: () => void;
 }
+const heroImages = [
+  "/assets/hero1.jpg",
+  "/assets/hero2.jpg",
+  "/assets/hero3.jpg",
+  "/assets/hero4.jpg",
+  "/assets/hero5.jpg",
+];
 
 export default function Hero({ onDiscoverClick, onBookClick }: HeroProps) {
+  const [currentImage, setCurrentImage] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImage((prev: any) => (prev + 1) % heroImages.length);
+  }, 5000); // change toutes les 5 secondes
+
+  return () => clearInterval(interval);
+}, []);
   return (
     <section className="relative min-h-screen md:h-screen w-full flex items-center justify-center overflow-hidden bg-[#4A4A37] pt-28 pb-24 md:py-0">
       {/* Background Video with subtle dark gold overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="object-cover w-full h-full"
->
-  <source src="/assets/hero.mp4" type="video/mp4" />
-</video>
+        {/* Background Slider */}
+<div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
+  {heroImages.map((image, index) => (
+    <div
+      key={index}
+      className={`absolute inset-0 transition-opacity duration-[2000ms] ${
+        currentImage === index ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <img
+        src={image}
+        alt=""
+        className="w-full h-full object-cover scale-105 animate-[slowZoom_7s_linear_forwards]"
+      />
+    </div>
+  ))}
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-[#4A4A37]/35 to-[#FFFDF9]" />
+  <div className="absolute inset-0 bg-black/20" />
+</div>
         {/* Soft elegant gradient layers */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-[#4A4A37]/35 to-[#FFFDF9]"></div>
         <div className="absolute inset-0 bg-black/20"></div>

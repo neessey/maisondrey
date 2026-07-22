@@ -142,7 +142,7 @@ export default function Header({ onBookClick, onExploreClick }: HeaderProps) {
               </button>
               <div className="flex justify-center gap-6 mt-4">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/la.maison.dreyyy/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs uppercase tracking-widest text-[#B7B68A] hover:text-[#D8B26A]"
@@ -151,7 +151,7 @@ export default function Header({ onBookClick, onExploreClick }: HeaderProps) {
                 </a>
                 <span className="text-[#E8C89A]">•</span>
                 <a
-                  href="https://wa.me/33600000000"
+                  href="https://wa.me/2250702925688"
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs uppercase tracking-widest text-[#B7B68A] hover:text-[#D8B26A]"
